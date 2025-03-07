@@ -7,7 +7,7 @@ It is easy to write an SQL query, but it is harder to build an efficient SQL que
 * **Think of it as a card catalog:** We create lists (indexes) of important information (columns) used in `WHERE`, `JOIN`, and `ORDER BY` clauses.
     * This speeds up data retrieval by allowing the database to directly locate data.
 * **Composite Indexes:** For queries with multiple `WHERE` conditions, create indexes that include all relevant columns.
-    * This allows for more efficient searching.
+    * This allows for more efficient searching, and migitating the computationally intensitive `GROUP BY` function.
 * **Only index the important stuff:** Too many lists (indexes) slow down `INSERT`, `UPDATE`, and `DELETE` operations.
     * Index strategically, focusing on frequently queried columns.
 * **Keep lists organized:** Regularly analyze and rebuild indexes to prevent fragmentation, which can degrade performance.
