@@ -60,4 +60,6 @@ It is easy to write an SQL query, but it is harder to build an efficient SQL que
 # Funnel and Churn Analysis example
 At a rapidly scaling SaaS startup, I led user growth efforts for a key product in the Ethiopian market. Recognizing the severe limitations of our existing data infrastructure—comprising only rudimentary user count and engagement dashboards—I took the initiative to build a robust analytical foundation. Leveraging SQL, I designed and implemented a sophisticated dashboard that enabled systematic funnel and churn analysis. This solution provided crucial insights into user behavior and churn patterns over time, allowing us to track key performance indicators (KPIs) and enabling rigorous A/B testing. By transforming raw data into actionable insights, I empowered the team to make data-driven decisions and effectively evaluate the impact of our growth experiments. This proactive approach significantly enhanced our ability to optimize user acquisition and retention strategies in a data-scarce environment, directly contributing to the product's market penetration.
 
-Here is the code I used, recreated with fictitious data. 
+Churn can be defined in various ways. Here I look at the difference in MAU between consecutive months as an indication of **network problems**, the difference in total submissions as an indication of **product discovery** problems, and difference in total approved submissions as a **product design** problem.
+
+Here is the code I used, recreated with fictitious data.  
