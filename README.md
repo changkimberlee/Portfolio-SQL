@@ -1,5 +1,19 @@
-# SQL Performance Optimization Best Practices
+# Funnel and Churn SQL Queries Portfolio
+This project illustrates how I used SQL queries to build a dashboard for Funnel and Churn monitoring in a project. I also describe my approach to [SQL Performance Optimization Best Practices](#sql-performance-optimization-best-practices).
 
+At a rapidly scaling startup, I led user growth and engagement efforts for a key product in the one country. Recognizing the severe limitations of our existing data infrastructure—comprising only rudimentary user count and engagement dashboards—I took the initiative to build a robust analytical foundation. Leveraging SQL, I designed and implemented a sophisticated dashboard that enabled systematic funnel and churn analysis over time as we launched different campaigns. This solution provided crucial insights into user behavior and churn patterns over time, allowing us to track key performance indicators (KPIs) and enabling rigorous A/B testing. By transforming raw data into actionable insights, I empowered the team to make data-driven decisions and effectively evaluate the impact of our growth experiments. This proactive approach significantly enhanced our ability to optimize user acquisition and retention strategies in a data-scarce environment, directly contributing to the product's market penetration.
+- [Here](../main/funnelchurn_sql.ipynb) is my SQL code with illustrative fictitious data
+
+- [Here](../main/funnelchurn_visualization_python.ipynb) is my illutstrative dashboard visualization, reproduced here with python
+
+Churn can be defined in various ways. Here I look at the difference in MAU between consecutive months as an indication of **network problems**, the difference in total submissions as an indication of **product discovery** problems, and difference in total approved submissions as a **product design** problem.
+
+- **Define the Funnel**: (Users in Country 1) Join app -> Complete onboarding -> Engage with any tasks on app --> Submit submission on project (task) ID 101 --> Submission approved
+
+- **Define "Active"**: "Monthly active user" can be defined in different ways depending on the business goals. In this case, it's tied to any engagement with the app platform (active on app), and specific engagement behavior with the product (submissions).
+
+
+## SQL Performance Optimization Best Practices
 It is easy to write an SQL query, but it is harder to build an efficient SQL query infranstructure. An inefficient infranstructure affects the work of all the teams and products that rely on this infranstructure! Leading to less data-based decisions. Here's a breakdown of my best practices to make my SQL run as efficiently as possible:
 
 **1. Smart Indexing (Indexing)**
@@ -56,10 +70,3 @@ It is easy to write an SQL query, but it is harder to build an efficient SQL que
     * Test changes and monitor performance.
 
 **In simple terms:** We want to organize our data and ask questions in a way that lets us find the answers quickly and efficiently, using technical methods to optimize the process.
-
-# Funnel and Churn Analysis example
-At a rapidly scaling SaaS startup, I led user growth efforts for a key product in the Ethiopian market. Recognizing the severe limitations of our existing data infrastructure—comprising only rudimentary user count and engagement dashboards—I took the initiative to build a robust analytical foundation. Leveraging SQL, I designed and implemented a sophisticated dashboard that enabled systematic funnel and churn analysis. This solution provided crucial insights into user behavior and churn patterns over time, allowing us to track key performance indicators (KPIs) and enabling rigorous A/B testing. By transforming raw data into actionable insights, I empowered the team to make data-driven decisions and effectively evaluate the impact of our growth experiments. This proactive approach significantly enhanced our ability to optimize user acquisition and retention strategies in a data-scarce environment, directly contributing to the product's market penetration.
-
-Churn can be defined in various ways. Here I look at the difference in MAU between consecutive months as an indication of **network problems**, the difference in total submissions as an indication of **product discovery** problems, and difference in total approved submissions as a **product design** problem.
-
-Here is the code I used, recreated with fictitious data.  
