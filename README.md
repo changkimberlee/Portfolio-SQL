@@ -1,4 +1,6 @@
 # Funnel and Churn SQL Queries Portfolio
+Change something 
+
 This project illustrates how I used SQL queries to build a dashboard for Funnel and Churn monitoring in a project. I also describe my approach to [SQL Performance Optimization Best Practices](#sql-performance-optimization-best-practices).
 
 At a rapidly scaling startup, I led user growth and engagement efforts for a key product in the one country. Recognizing the severe limitations of our existing data infrastructure, I took the initiative to build a robust analytical foundation. Leveraging SQL, I designed and implemented a sophisticated dashboard that enabled systematic funnel and churn analysis over time as we launched different campaigns. This solution provided crucial insights into user behavior and churn patterns over time, allowing us to track key performance indicators (KPIs), enabling rigorous A/B testing and data-backed decisions. I empowered the team to make data-driven decisions and effectively evaluate various growth strategies to find the most efficient and effective approach. This proactive approach helped optimize user acquisition and retention strategies in an originally data-scarce environment, directly contributing to the product's market penetration.
